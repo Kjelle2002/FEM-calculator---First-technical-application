@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="font">
+    <font>
+     <family>Courier New</family>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="7">
+       <widget class="QPushButton" name="show_deformed_shape_button">
+        <property name="text">
+         <string>Deformed shape</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QLineEdit" name="aEnd_Edit"/>
+      </item>
+      <item row="8" column="4">
+       <widget class="QLineEdit" name="el_edit"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="E_label">
+        <property name="text">
+         <string>E[Pa]</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>a, end</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1" colspan="2">
+       <widget class="QLineEdit" name="E_edit"/>
+      </item>
+      <item row="7" column="1" colspan="2">
+       <widget class="QLineEdit" name="t_edit"/>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Max el.size</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1" colspan="2">
+       <widget class="QSlider" name="el_slider">
+        <property name="minimum">
+         <number>20</number>
+        </property>
+        <property name="maximum">
+         <number>60</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="v_label">
+        <property name="text">
+         <string>v[-]</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="4" column="7">
+       <widget class="QPushButton" name="show_element_values_button">
+        <property name="text">
+         <string>Element Values</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1" colspan="2">
+       <widget class="QLineEdit" name="v_edit"/>
+      </item>
+      <item row="2" column="5">
+       <widget class="QRadioButton" name="vary_a">
+        <property name="text">
+         <string>Vary</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="5">
+       <widget class="QRadioButton" name="vary_b">
+        <property name="text">
+         <string>Vary</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="w_label">
+        <property name="text">
+         <string>w[m]</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" colspan="2">
+       <widget class="QLineEdit" name="b_edit"/>
+      </item>
+      <item row="0" column="1" colspan="2">
+       <widget class="QLineEdit" name="w_edit"/>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="t_label">
+        <property name="text">
+         <string>t [-]</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="7">
+       <widget class="QPushButton" name="show_geometry_button">
+        <property name="text">
+         <string>Geometry</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="h_label_2">
+        <property name="text">
+         <string>h[m]</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QLineEdit" name="h_edit"/>
+      </item>
+      <item row="1" column="7">
+       <widget class="QPushButton" name="show_mesh_button">
+        <property name="text">
+         <string>Mesh</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="a_label">
+        <property name="text">
+         <string>a[m]</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="b_label">
+        <property name="text">
+         <string>b[m]</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="2">
+       <widget class="QLineEdit" name="a_edit"/>
+      </item>
+      <item row="4" column="4">
+       <widget class="QLineEdit" name="bEnd_edit"/>
+      </item>
+      <item row="7" column="4">
+       <widget class="QLineEdit" name="tEnd_edit"/>
+      </item>
+      <item row="7" column="5">
+       <widget class="QRadioButton" name="vary_t">
+        <property name="text">
+         <string>Vary</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="5">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Param Steps</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="6">
+       <widget class="QSpinBox" name="param_step"/>
+      </item>
+      <item row="6" column="7">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Param Study</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>t, end</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>b, end</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="7">
+       <widget class="QPushButton" name="exit">
+        <property name="text">
+         <string>Exit</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="report_edit">
+      <property name="font">
+       <font>
+        <family>Courier New</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="Mainmenu">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMain">
+    <property name="title">
+     <string>Main Menu</string>
+    </property>
+    <addaction name="new_action"/>
+    <addaction name="open_action"/>
+    <addaction name="save_action"/>
+    <addaction name="exit_action"/>
+   </widget>
+   <widget class="QMenu" name="menuCalculation">
+    <property name="title">
+     <string>Calculation</string>
+    </property>
+    <addaction name="action"/>
+   </widget>
+   <addaction name="menuMain"/>
+   <addaction name="menuCalculation"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="new_action">
+   <property name="text">
+    <string>new_action</string>
+   </property>
+  </action>
+  <action name="open_action">
+   <property name="text">
+    <string>open_action</string>
+   </property>
+  </action>
+  <action name="save_action">
+   <property name="text">
+    <string>save_action</string>
+   </property>
+  </action>
+  <action name="exit_action">
+   <property name="text">
+    <string>exit_action</string>
+   </property>
+  </action>
+  <action name="save_as_action">
+   <property name="text">
+    <string>save_as_action</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>run</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
